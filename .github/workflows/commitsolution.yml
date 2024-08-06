@@ -132,7 +132,7 @@ jobs:
                 PreDeploymentStepStatus = "$successStatus"
             }
             $jsonBody = $requestBody | ConvertTo-Json
-
+            Write-Host $jsonBody
             # Update the deployment stage record ($dataverseHost UpdatePreDeploymentStepStatus)
             $requestUrlRemainder = "UpdatePreDeploymentStepStatus"
             $requestUrl = "https://$dataverseHost/api/data/v9.2/$requestUrlRemainder"
