@@ -40,13 +40,8 @@ jobs:
         shell: pwsh
         run: |
             if('${{ github.event.inputs.target_branch }}' -ne '') {
-                git checkout -b ${{ github.event.inputs.target_branch }} ${{ github.event.inputs.source_branch }}
-                git pull ${{ github.event.inputs.target_branch }}
+                git checkout ${{ github.event.inputs.target_branch }} || git checkout -b ${{ github.event.inputs.target_branch }} ${{ github.event.inputs.source_branch }}
             }
-            else {
-                git pull ${{ github.event.inputs.source_branch }}
-            }
-
       # Export the solution from the artifact created by pipelines
       - name: download solution from artifact
         env:
