@@ -136,4 +136,4 @@ jobs:
             # Update the deployment stage record ($dataverseHost UpdatePreDeploymentStepStatus)
             $requestUrlRemainder = "UpdatePreDeploymentStepStatus"
             $requestUrl = "https://$dataverseHost/api/data/v9.2/$requestUrlRemainder"
-            $response = Invoke-RestMethod $requestUrl -Method 'POST' -Headers $headers -Body $body
+            $response = Invoke-RestMethod $requestUrl -Method 'POST' -Headers $headers -Body $jsonBody
