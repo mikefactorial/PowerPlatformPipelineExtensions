@@ -6,6 +6,9 @@ on:
       artifact_url:
         description: "The url of the Dataverse record ID for the artifact created by the pipelines (Example: https://[your-env].crm.dynamics.com/api/data/v9.0/deploymentartifacts([your-artifact-id])/artifactfile/$value)."
         required: true
+      deployment_stageid:
+        description: "The deployment stage id in order to update the pipeline after successful run"
+        required: true
       solution_name:
         description: "Name of the Solution in Dataverse environment"
         required: true
@@ -101,3 +104,36 @@ jobs:
           } else {
               git push origin ${{ github.event.inputs.source_branch }}
           }
+      # Update the pipeline stage record
+      - name: update the pipeline stage record
+        env:
+            CLIENT_ID: ${{secrets.CLIENT_ID}}   
+            TENANT_ID: ${{secrets.TENANT_ID}}   
+            CLIENT_SECRET: ${{secrets.CLIENT_SECRET}}
+        shell: pwsh
+        run: |
+            $aadHost = "login.microsoftonline.com"
+            $url = "${{ github.event.inputs.artifact_url }}"
+            $options = [System.StringSplitOptions]::RemoveEmptyEntries
+            $dataverseHost = $url.Split("://", $options)[1].Split("/")[0]
+
+            $body = @{client_id = $env:CLIENT_ID; client_secret = $env:CLIENT_SECRET; grant_type = "client_credentials"; scope = "https://$dataverseHost/.default"; }
+            $OAuthReq = Invoke-RestMethod -Method Post -Uri "https://$aadHost/$env:TENANT_ID/oauth2/v2.0/token" -Body $body
+            $spnToken = $OAuthReq.access_token
+            $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
+            $headers.Add("Authorization", "Bearer $spnToken")
+            $headers.Add("Content-Type", "application/json")
+
+            # Set up the request body
+            $successStatus = 20
+            $failedStatus = 30
+            $requestBody = @{
+                StageRunId = "${{ github.event.inputs.deployment_stageid }}"
+                PreDeploymentStepStatus = "$successStatus"
+            }
+            $jsonBody = $requestBody | ConvertTo-Json
+
+            # Update the deployment stage record ($dataverseHost UpdatePreDeploymentStepStatus)
+            $requestUrlRemainder = "UpdatePreDeploymentStepStatus"
+            $requestUrl = "https://$dataverseHost/api/data/v9.2/$requestUrlRemainder"
+            $response = Invoke-RestMethod $requestUrl -Method 'POST' -Headers $headers -Body $body
