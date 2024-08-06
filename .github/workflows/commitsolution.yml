@@ -42,6 +42,7 @@ jobs:
             if('${{ github.event.inputs.target_branch }}' -ne '') {
                 git checkout -b ${{ github.event.inputs.target_branch }} ${{ github.event.inputs.source_branch }}
             }
+            git pull
 
       # Export the solution from the artifact created by pipelines
       - name: download solution from artifact
