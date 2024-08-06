@@ -40,7 +40,7 @@ jobs:
         shell: pwsh
         run: |
             if('${{ github.event.inputs.target_branch }}' -ne '') {
-                git fetch all
+                git fetch --all
                 git checkout ${{ github.event.inputs.target_branch }} || git checkout -b ${{ github.event.inputs.target_branch }}
             }
       # Export the solution from the artifact created by pipelines
