@@ -6,7 +6,7 @@ on:
       artifact_url:
         description: "The url of the Dataverse record ID for the artifact created by the pipelines (Example: https://[your-env].crm.dynamics.com/api/data/v9.0/deploymentartifacts([your-artifact-id])/artifactfile/$value)."
         required: true
-      deployment_stageid:
+      deployment_stagerunid:
         description: "The deployment stage id in order to update the pipeline after successful run"
         required: true
       solution_name:
@@ -128,7 +128,7 @@ jobs:
             $successStatus = 20
             $failedStatus = 30
             $requestBody = @{
-                StageRunId = "${{ github.event.inputs.deployment_stageid }}"
+                StageRunId = "${{ github.event.inputs.deployment_stagerunid }}"
                 PreDeploymentStepStatus = "$successStatus"
             }
             $jsonBody = $requestBody | ConvertTo-Json
