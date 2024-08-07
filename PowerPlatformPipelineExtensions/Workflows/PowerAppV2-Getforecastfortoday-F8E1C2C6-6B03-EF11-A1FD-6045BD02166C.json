@@ -55,7 +55,7 @@
             },
             "parameters": {
               "Location": "Washington, DC",
-              "units": "I"
+              "units": "C"
             },
             "authentication": "@parameters('$authentication')"
           }
