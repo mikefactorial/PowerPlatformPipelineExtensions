@@ -90,6 +90,7 @@ jobs:
         run: |
           rm -rf ${{ github.event.inputs.solution_name }}.zip
           rm -rf ${{ github.event.inputs.solution_name }}_managed.zip
+          git config --global user.email "mike@mikefactorial.com"
           git config user.name ${{ github.event.inputs.user_name }}
           git pull 
           git add --all
