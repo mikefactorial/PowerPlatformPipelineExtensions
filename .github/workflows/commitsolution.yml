@@ -81,7 +81,7 @@ jobs:
           solution-file: "${{ github.event.inputs.solution_name }}.zip"
           solution-folder: "${{ github.event.repository.name }}"
           solution-type: 'Both'
-          process-canvas-apps: false
+          process-canvas-apps: true
           overwrite-files: true
 
       # Commit changes to the existing or new branch
