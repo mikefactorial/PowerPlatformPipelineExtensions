@@ -107,9 +107,9 @@ jobs:
         run: |
           git pull 
           if('${{ github.event.inputs.target_branch }}' -ne '') {
-              git push origin ${{ github.event.inputs.target_branch }}
+              git push -f origin ${{ github.event.inputs.target_branch }}
           } else {
-              git push origin ${{ github.event.inputs.source_branch }}
+              git push -f origin ${{ github.event.inputs.source_branch }}
           }
       # Update the pipeline stage record
       - name: update the pipeline stage record
