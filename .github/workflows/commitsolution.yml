@@ -98,7 +98,6 @@ jobs:
           rm -rf ${{ github.event.inputs.solution_name }}_managed.zip
           git config --global user.email "mike@mikefactorial.com"
           git config user.name ${{ github.event.inputs.user_name }}
-          git pull 
           git add --all
           git commit -am "${{ github.event.inputs.commit_message }}" --allow-empty
 
@@ -106,6 +105,7 @@ jobs:
       - name: push to branch
         shell: pwsh
         run: |
+          git pull 
           if('${{ github.event.inputs.target_branch }}' -ne '') {
               git push origin ${{ github.event.inputs.target_branch }}
           } else {
