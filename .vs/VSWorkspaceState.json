@@ -2,7 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\.github",
-    "\\.github\\workflows"
+    "\\.github\\workflows",
+    "\\BurkertDemo",
+    "\\BurkertDemo\\CanvasApps",
+    "\\BurkertDemo\\CanvasApps\\mf_weatherapp_6c6d9_DocumentUri"
   ],
+  "SelectedNode": "\\BurkertDemo\\CanvasApps\\mf_weatherapp_6c6d9_DocumentUri\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
