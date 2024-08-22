@@ -88,6 +88,9 @@ jobs:
       - name: commit changes
         shell: pwsh
         run: |
+          Get-ChildItem '.' -R -Filter *.msapp | ForEach-Object {
+            Expand-Archive $_.FullName "$($_.DirectoryName)/$($_.Basename)" -Force
+          }          
           rm -rf ${{ github.event.inputs.solution_name }}.zip
           rm -rf ${{ github.event.inputs.solution_name }}_managed.zip
           git config --global user.email "mike@mikefactorial.com"
