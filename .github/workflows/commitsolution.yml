@@ -91,6 +91,9 @@ jobs:
           Get-ChildItem '.' -R -Filter *.msapp | ForEach-Object {
             Expand-Archive $_.FullName "$($_.DirectoryName)/$($_.Basename)" -Force
           }          
+          Get-ChildItem '.' -R -Filter *.gitignore | ForEach-Object {
+            Remove-Item $_.FullName -Force
+          }          
           rm -rf ${{ github.event.inputs.solution_name }}.zip
           rm -rf ${{ github.event.inputs.solution_name }}_managed.zip
           git config --global user.email "mike@mikefactorial.com"
