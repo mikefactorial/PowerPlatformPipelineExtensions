@@ -116,9 +116,9 @@
   "EnableInstrumentation": false,
   "ControlCount": {
     "screen": 1,
-    "label": 1,
+    "label": 2,
     "button": 1
   },
-  "DeserializationLoadTime": 1.3032759,
-  "AnalysisLoadTime": 0.1001031
+  "DeserializationLoadTime": 1.0267982,
+  "AnalysisLoadTime": 0.1134877
 }
