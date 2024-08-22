@@ -42,6 +42,7 @@ jobs:
             if('${{ github.event.inputs.target_branch }}' -ne '') {
                 git fetch --all
                 git checkout ${{ github.event.inputs.target_branch }} || git checkout -b ${{ github.event.inputs.target_branch }}
+                git branch --set-upstream-to=origin/${{ github.event.inputs.target_branch }} ${{ github.event.inputs.target_branch }}
             }
       # Export the solution from the artifact created by pipelines
       - name: download solution from artifact
