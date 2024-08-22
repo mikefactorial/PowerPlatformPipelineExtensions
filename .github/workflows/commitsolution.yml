@@ -88,6 +88,7 @@ jobs:
       - name: commit changes
         shell: pwsh
         run: |
+          git pull 
           Get-ChildItem '.' -R -Filter *.msapp | ForEach-Object {
             Expand-Archive $_.FullName "$($_.DirectoryName)/$($_.Basename)" -Force
           }        
@@ -103,7 +104,6 @@ jobs:
       - name: push to branch
         shell: pwsh
         run: |
-          git pull 
           if('${{ github.event.inputs.target_branch }}' -ne '') {
               git push -f origin ${{ github.event.inputs.target_branch }}
           } else {
