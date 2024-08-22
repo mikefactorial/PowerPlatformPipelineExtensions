@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.24064.210" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.24071.208" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
-    <UniqueName>ALMAcceleratorDemo</UniqueName>
+    <UniqueName>BurkertDemo</UniqueName>
     <LocalizedNames>
-      <LocalizedName description="ALM Accelerator Demo" languagecode="1033" />
+      <LocalizedName description="Burkert Demo" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.7</Version>
+    <Version>1.0.0.2</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>mikefactorial</UniqueName>
@@ -79,7 +79,7 @@
     </Publisher>
     <RootComponents>
       <RootComponent type="29" id="{f8e1c2c6-6b03-ef11-a1fd-6045bd02166c}" behavior="0" />
-      <RootComponent type="300" schemaName="mf_almacceleratordemo_21eb0" behavior="0" />
+      <RootComponent type="300" schemaName="mf_weatherapp_6c6d9" behavior="0" />
     </RootComponents>
     <MissingDependencies />
   </SolutionManifest>
