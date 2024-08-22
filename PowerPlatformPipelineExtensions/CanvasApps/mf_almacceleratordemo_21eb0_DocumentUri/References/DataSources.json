@@ -1,0 +1,15 @@
+{
+  "DataSources": [
+    {
+      "Type": "ServiceInfo",
+      "Name": "PowerAppV2->Getforecastfortoday",
+      "ServiceKind": "ConnectedWadl",
+      "WadlMetadata": {
+        "WadlXml": "<application xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:service=\"https://msmanaged-na.azure-apim.net/apim/logicflows\" xmlns:siena=\"http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11\" siena:serviceId=\"PowerAppV2-&gt;Getforecastfortoday\" xmlns=\"http://wadl.dev.java.net/2009/02\">\r\n  <doc title=\"PowerAppV2 -&gt; Get forecast for today\" />\r\n  <grammars>\r\n    <jsonTypes targetNamespace=\"https://msmanaged-na.azure-apim.net/apim/logicflows\" xmlns=\"http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11\">\r\n      <object name=\"ManualTriggerInput\" />\r\n      <string name=\"ResponseActionOutput_conditions_def\" />\r\n      <object name=\"ResponseActionOutput\">\r\n        <property name=\"conditions\" type=\"string\" />\r\n      </object>\r\n      <object name=\"Run_responses_default_def\" />\r\n    </jsonTypes>\r\n  </grammars>\r\n  <resources siena:authenticationProviderHref=\"#PowerAppAuth\" base=\"https://msmanaged-na.azure-apim.net/apim/logicflows\">\r\n    <resource path=\"/{connectionId}/triggers/manual/run\">\r\n      <param style=\"template\" name=\"connectionId\" type=\"xs:string\" required=\"true\" />\r\n      <method siena:requiresAuthentication=\"true\" name=\"POST\" id=\"Run\">\r\n        <doc title=\"Runs a logic flow trigger.\" />\r\n        <request>\r\n          <param style=\"query\" name=\"api-version\" type=\"xs:string\" required=\"true\" fixed=\"2015-02-01-preview\">\r\n            <doc title=\"The api version\" />\r\n          </param>\r\n          <representation mediaType=\"application/json\" />\r\n        </request>\r\n        <response>\r\n          <representation mediaType=\"application/json\" element=\"service:ResponseActionOutput\" />\r\n        </response>\r\n      </method>\r\n    </resource>\r\n  </resources>\r\n  <authenticationProviders xmlns=\"http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11\">\r\n    <connectionProvider id=\"PowerAppAuth\" siena:connectionProviderId=\"logicflows\" />\r\n  </authenticationProviders>\r\n  <template xmlns=\"http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11\">\r\n    <variable name=\"connectionId\">\r\n      <modifyParams style=\"template\" name=\"connectionId\" attribute=\"fixed\" />\r\n    </variable>\r\n  </template>\r\n</application>"
+      },
+      "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "FlowNameId": "c50dfbd0-e80a-4d57-82a1-8e607833041e",
+      "WorkflowEntityId": "f8e1c2c6-6b03-ef11-a1fd-6045bd02166c"
+    }
+  ]
+}
