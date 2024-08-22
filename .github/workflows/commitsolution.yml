@@ -42,7 +42,6 @@ jobs:
             if('${{ github.event.inputs.target_branch }}' -ne '') {
                 git fetch --all
                 git checkout ${{ github.event.inputs.target_branch }} || git checkout -b ${{ github.event.inputs.target_branch }}
-                git branch --set-upstream-to=origin/${{ github.event.inputs.target_branch }} ${{ github.event.inputs.target_branch }}
             }
       # Export the solution from the artifact created by pipelines
       - name: download solution from artifact
@@ -89,7 +88,6 @@ jobs:
       - name: commit changes
         shell: pwsh
         run: |
-          git pull 
           Get-ChildItem '.' -R -Filter *.msapp | ForEach-Object {
             Expand-Archive $_.FullName "$($_.DirectoryName)/$($_.Basename)" -Force
           }          
@@ -100,6 +98,7 @@ jobs:
           rm -rf ${{ github.event.inputs.solution_name }}_managed.zip
           git config --global user.email "mike@mikefactorial.com"
           git config user.name ${{ github.event.inputs.user_name }}
+          git pull 
           git add --all
           git commit -am "${{ github.event.inputs.commit_message }}" --allow-empty
 
