@@ -88,6 +88,7 @@ jobs:
       - name: commit changes
         shell: pwsh
         run: |
+          git pull 
           Get-ChildItem '.' -R -Filter *.msapp | ForEach-Object {
             Expand-Archive $_.FullName "$($_.DirectoryName)/$($_.Basename)" -Force
           }          
@@ -98,7 +99,6 @@ jobs:
           rm -rf ${{ github.event.inputs.solution_name }}_managed.zip
           git config --global user.email "mike@mikefactorial.com"
           git config user.name ${{ github.event.inputs.user_name }}
-          git pull 
           git add --all
           git commit -am "${{ github.event.inputs.commit_message }}" --allow-empty
 
