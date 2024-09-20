@@ -6,306 +6,306 @@
       "palette": [
         {
           "name": "ScreenBkgColor",
-          "type": "c",
-          "value": "RGBA(255, 255, 255, 1)"
+          "value": "RGBA(255, 255, 255, 1)",
+          "type": "c"
         },
         {
           "name": "InvertedBkgColor",
-          "type": "c",
-          "value": "RGBA(56, 96, 178, 1)"
+          "value": "RGBA(56, 96, 178, 1)",
+          "type": "c"
         },
         {
           "name": "PrimaryColor1",
-          "type": "c",
-          "value": "RGBA(56, 96, 178, 1)"
+          "value": "RGBA(56, 96, 178, 1)",
+          "type": "c"
         },
         {
           "name": "PrimaryColor2",
-          "type": "c",
-          "value": "RGBA(0, 18, 107, 1)"
+          "value": "RGBA(0, 18, 107, 1)",
+          "type": "c"
         },
         {
           "name": "PrimaryColor3",
-          "type": "c",
-          "value": "RGBA(186, 202, 226, 1)"
+          "value": "RGBA(186, 202, 226, 1)",
+          "type": "c"
         },
         {
           "name": "PrimaryColor1Light",
-          "type": "c",
-          "value": "RGBA(56, 96, 178, .2)"
+          "value": "RGBA(56, 96, 178, .2)",
+          "type": "c"
         },
         {
           "name": "PrimaryColor2Light",
-          "type": "c",
-          "value": "RGBA(0, 18, 107, .2)"
+          "value": "RGBA(0, 18, 107, .2)",
+          "type": "c"
         },
         {
           "name": "PrimaryColor3Light",
-          "type": "c",
-          "value": "RGBA(186, 202, 226, .2)"
+          "value": "RGBA(186, 202, 226, .2)",
+          "type": "c"
         },
         {
           "name": "PrimaryColor3Fade",
-          "type": "c",
-          "value": "ColorFade(RGBA(186, 202, 226, 1), 70%)"
+          "value": "ColorFade(RGBA(186, 202, 226, 1), 70%)",
+          "type": "c"
         },
         {
           "name": "TextMainColor",
-          "type": "c",
-          "value": "RGBA(0, 0, 0, 1)"
+          "value": "RGBA(0, 0, 0, 1)",
+          "type": "c"
         },
         {
           "name": "TextMainColorInverted",
-          "type": "c",
-          "value": "RGBA(255, 255, 255, 1)"
+          "value": "RGBA(255, 255, 255, 1)",
+          "type": "c"
         },
         {
           "name": "TextLinkColor",
-          "type": "c",
-          "value": "RGBA(0, 134, 208, 1)"
+          "value": "RGBA(0, 134, 208, 1)",
+          "type": "c"
         },
         {
           "name": "TextFooterFontColor",
-          "type": "c",
-          "value": "RGBA(117, 117, 117, 1)"
+          "value": "RGBA(117, 117, 117, 1)",
+          "type": "c"
         },
         {
           "name": "InputBkgColor",
-          "type": "c",
-          "value": "RGBA(255, 255, 255, 1)"
+          "value": "RGBA(255, 255, 255, 1)",
+          "type": "c"
         },
         {
           "name": "InputTextColor",
-          "type": "c",
-          "value": "RGBA(0, 0, 0, 1)"
+          "value": "RGBA(0, 0, 0, 1)",
+          "type": "c"
         },
         {
           "name": "InputBorderColor",
-          "type": "c",
-          "value": "RGBA(0, 18, 107, 1)"
+          "value": "RGBA(0, 18, 107, 1)",
+          "type": "c"
         },
         {
           "name": "RailBkgColor",
-          "type": "c",
-          "value": "RGBA(128, 130, 133, 1)"
+          "value": "RGBA(128, 130, 133, 1)",
+          "type": "c"
         },
         {
           "name": "HandleBkgColor",
-          "type": "c",
-          "value": "RGBA(255, 255, 255, 1)"
+          "value": "RGBA(255, 255, 255, 1)",
+          "type": "c"
         },
         {
           "name": "InnerCircleBkgColor",
-          "type": "c",
-          "value": "RGBA(255, 255, 255, 1)"
+          "value": "RGBA(255, 255, 255, 1)",
+          "type": "c"
         },
         {
           "name": "DisabledBorderColor",
-          "type": "c",
-          "value": "RGBA(166, 166, 166, 1)"
+          "value": "RGBA(166, 166, 166, 1)",
+          "type": "c"
         },
         {
           "name": "DisabledTextMainColor",
-          "type": "c",
-          "value": "RGBA(166, 166, 166, 1)"
+          "value": "RGBA(166, 166, 166, 1)",
+          "type": "c"
         },
         {
           "name": "DisabledInputBkgColor",
-          "type": "c",
-          "value": "RGBA(244, 244, 244, 1)"
+          "value": "RGBA(244, 244, 244, 1)",
+          "type": "c"
         },
         {
           "name": "DisabledButtonBkgColor",
-          "type": "c",
-          "value": "RGBA(244, 244, 244, 1)"
+          "value": "RGBA(244, 244, 244, 1)",
+          "type": "c"
         },
         {
           "name": "HoverButtonBkgColor",
-          "type": "c",
-          "value": "ColorFade(RGBA(56, 96, 178, 1), -20%)"
+          "value": "ColorFade(RGBA(56, 96, 178, 1), -20%)",
+          "type": "c"
         },
         {
           "name": "HoverCancelButtonBkgColor",
-          "type": "c",
-          "value": "ColorFade(RGBA(62, 96, 170, 1), 20%)"
+          "value": "ColorFade(RGBA(62, 96, 170, 1), 20%)",
+          "type": "c"
         },
         {
           "name": "HoverInputBkgColor",
-          "type": "c",
-          "value": "RGBA(186, 202, 226, 1)"
+          "value": "RGBA(186, 202, 226, 1)",
+          "type": "c"
         },
         {
           "name": "OverlayBkgColor",
-          "type": "c",
-          "value": "RGBA(0, 0, 0, 0.4)"
+          "value": "RGBA(0, 0, 0, 0.4)",
+          "type": "c"
         },
         {
           "name": "ReservedInfoColor",
-          "type": "c",
-          "value": "RGBA(0, 134, 208, 1)"
+          "value": "RGBA(0, 134, 208, 1)",
+          "type": "c"
         },
         {
           "name": "ReservedSuccessColor",
-          "type": "c",
-          "value": "RGBA(141, 198, 63, 1)"
+          "value": "RGBA(141, 198, 63, 1)",
+          "type": "c"
         },
         {
           "name": "ReservedWarningColor",
-          "type": "c",
-          "value": "RGBA(252, 219, 2, 1)"
+          "value": "RGBA(252, 219, 2, 1)",
+          "type": "c"
         },
         {
           "name": "ReservedErrorColor",
-          "type": "c",
-          "value": "RGBA(246, 88, 16, 1)"
+          "value": "RGBA(246, 88, 16, 1)",
+          "type": "c"
         },
         {
           "name": "ReservedCriticalErrorColor",
-          "type": "c",
-          "value": "RGBA(168, 0, 0, 1)"
+          "value": "RGBA(168, 0, 0, 1)",
+          "type": "c"
         },
         {
           "name": "ReservedDisabledStatusColor",
-          "type": "c",
-          "value": "RGBA(193, 193, 193, 1)"
+          "value": "RGBA(193, 193, 193, 1)",
+          "type": "c"
         },
         {
           "name": "ReservedWhiteColor",
-          "type": "c",
-          "value": "RGBA(255, 255, 255, 1)"
+          "value": "RGBA(255, 255, 255, 1)",
+          "type": "c"
         },
         {
           "name": "ReservedGrayColor",
-          "type": "c",
-          "value": "RGBA(240, 240, 240, 1)"
+          "value": "RGBA(240, 240, 240, 1)",
+          "type": "c"
         },
         {
           "name": "ReservedBlackColor",
-          "type": "c",
-          "value": "RGBA(47, 41, 43, 1)"
+          "value": "RGBA(47, 41, 43, 1)",
+          "type": "c"
         },
         {
           "name": "ReservedChartColorSet",
-          "type": "![]",
-          "value": "[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]"
+          "value": "[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]",
+          "type": "![]"
         },
         {
           "name": "TextBodyFontWeight",
-          "type": "e",
-          "value": "%FontWeight.RESERVED%.Normal"
+          "value": "%FontWeight.RESERVED%.Normal",
+          "type": "e"
         },
         {
           "name": "TextEmphasisFontWeight",
-          "type": "e",
-          "value": "%FontWeight.RESERVED%.Semibold"
+          "value": "%FontWeight.RESERVED%.Semibold",
+          "type": "e"
         },
         {
           "name": "TextBodyFontFace",
-          "type": "e",
-          "value": "%Font.RESERVED%.'Open Sans'"
+          "value": "%Font.RESERVED%.'Open Sans'",
+          "type": "e"
         },
         {
           "name": "InputBorderThickness",
-          "type": "n",
-          "value": "2"
+          "value": "2",
+          "type": "n"
         },
         {
           "name": "InputFocusedBorderThickness",
-          "type": "n",
-          "value": "4"
+          "value": "4",
+          "type": "n"
         },
         {
           "name": "TextHeaderFontSize",
+          "value": "18",
           "phoneValue": "27",
-          "type": "n",
-          "value": "18"
+          "type": "n"
         },
         {
           "name": "TextTitleFontSize",
-          "type": "n",
-          "value": "20"
+          "value": "20",
+          "type": "n"
         },
         {
           "name": "TextSubtitleFontSize",
-          "type": "n",
-          "value": "18"
+          "value": "18",
+          "type": "n"
         },
         {
           "name": "TextContentFontSize",
-          "type": "n",
-          "value": "16"
+          "value": "16",
+          "type": "n"
         },
         {
           "name": "TextHeaderFontSize2020",
-          "type": "n",
-          "value": "16"
+          "value": "16",
+          "type": "n"
         },
         {
           "name": "TextEmphasisFontSize",
+          "value": "15",
           "phoneValue": "24",
-          "type": "n",
-          "value": "15"
+          "type": "n"
         },
         {
           "name": "TextBodyFontSize",
+          "value": "13",
           "phoneValue": "21",
-          "type": "n",
-          "value": "13"
+          "type": "n"
         },
         {
           "name": "TextFooterFontSize",
+          "value": "11",
           "phoneValue": "18",
-          "type": "n",
-          "value": "11"
+          "type": "n"
         },
         {
           "name": "TextMiniFontSize",
+          "value": "9",
           "phoneValue": "15",
-          "type": "n",
-          "value": "9"
+          "type": "n"
         },
         {
           "name": "IconFillColorInverted",
-          "type": "c",
-          "value": "RGBA(255, 255, 255, 1)"
+          "value": "RGBA(255, 255, 255, 1)",
+          "type": "c"
         },
         {
           "name": "IconPressedFillColorInverted",
-          "type": "c",
-          "value": "RGBA(255, 255, 255, 0.3)"
+          "value": "RGBA(255, 255, 255, 0.3)",
+          "type": "c"
         },
         {
           "name": "DatePickerSelectedColor",
-          "type": "c",
-          "value": "RGBA(37, 70, 148, 1)"
+          "value": "RGBA(37, 70, 148, 1)",
+          "type": "c"
         },
         {
           "name": "DatePickerHeaderColor",
-          "type": "c",
-          "value": "RGBA(68, 97, 165, 1)"
+          "value": "RGBA(68, 97, 165, 1)",
+          "type": "c"
         },
         {
           "name": "NoAttachmentPaddingLeft",
+          "value": "12",
           "phoneValue": "20",
-          "type": "n",
-          "value": "12"
+          "type": "n"
         },
         {
           "name": "DefaultSize",
+          "value": "14",
           "phoneValue": "24",
-          "type": "n",
-          "value": "14"
+          "type": "n"
         },
         {
           "name": "DefaultSize2",
-          "type": "n",
-          "value": "13"
+          "value": "13",
+          "type": "n"
         }
       ],
       "styles": [
         {
-          "controlTemplateName": "screen",
           "name": "defaultScreenStyle",
+          "controlTemplateName": "screen",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -318,8 +318,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "defaultLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "BorderColor",
@@ -412,8 +412,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "basicNoSizeLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "DisabledColor",
@@ -434,8 +434,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "basicNoSizeInvertedBkgLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -456,8 +456,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "basicNoSizeWeightColorLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "DisabledColor",
@@ -470,8 +470,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "invertedBkgHeaderLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -496,8 +496,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "invertedBkgTitleLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -522,8 +522,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "linkLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -544,8 +544,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "headerLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -570,8 +570,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "subHeaderLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -596,8 +596,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "titleLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -622,8 +622,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "overlayTitleLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -648,8 +648,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "subtitleLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -674,8 +674,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "overlaySubtitleLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -700,8 +700,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "contentLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -726,8 +726,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "accentLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -820,8 +820,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "pickerEmphasisLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -846,8 +846,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "pickerEmphasisWithAccentLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -872,8 +872,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "pickerEmphasisSecondaryLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -898,8 +898,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "footerAccentLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -924,8 +924,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "footerLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -1018,8 +1018,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "miniLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -1044,8 +1044,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "miniInvertedBkgLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -1070,8 +1070,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "disabledLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -1092,8 +1092,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "infoLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -1114,8 +1114,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "successLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -1136,8 +1136,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "warningLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -1158,8 +1158,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "errorLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -1180,8 +1180,8 @@
           ]
         },
         {
-          "controlTemplateName": "label",
           "name": "criticalErrorLabelStyle",
+          "controlTemplateName": "label",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -1258,8 +1258,8 @@
           ]
         },
         {
-          "controlTemplateName": "toggleSwitch",
           "name": "defaultToggleSwitchStyle",
+          "controlTemplateName": "toggleSwitch",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -1328,8 +1328,8 @@
           ]
         },
         {
-          "controlTemplateName": "rating",
           "name": "defaultRatingStyle",
+          "controlTemplateName": "rating",
           "propertyValuesMap": [
             {
               "property": "BorderColor",
@@ -1362,8 +1362,8 @@
           ]
         },
         {
-          "controlTemplateName": "checkbox",
           "name": "defaultCheckboxStyle",
+          "controlTemplateName": "checkbox",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -1484,8 +1484,8 @@
           ]
         },
         {
-          "controlTemplateName": "radio",
           "name": "defaultRadioStyle",
+          "controlTemplateName": "radio",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -1598,8 +1598,8 @@
           ]
         },
         {
-          "controlTemplateName": "listbox",
           "name": "defaultListboxStyle",
+          "controlTemplateName": "listbox",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -1708,8 +1708,8 @@
           ]
         },
         {
-          "controlTemplateName": "dropdown",
           "name": "defaultDropdownStyle",
+          "controlTemplateName": "dropdown",
           "propertyValuesMap": [
             {
               "property": "BorderColor",
@@ -1846,8 +1846,8 @@
           ]
         },
         {
-          "controlTemplateName": "combobox",
           "name": "defaultComboBoxStyle",
+          "controlTemplateName": "combobox",
           "propertyValuesMap": [
             {
               "property": "BorderColor",
@@ -1960,8 +1960,8 @@
           ]
         },
         {
-          "controlTemplateName": "attachments",
           "name": "defaultAttachmentsStyle",
+          "controlTemplateName": "attachments",
           "propertyValuesMap": [
             {
               "property": "BorderColor",
@@ -2058,8 +2058,8 @@
           ]
         },
         {
-          "controlTemplateName": "datepicker",
           "name": "defaultDatePickerStyle",
+          "controlTemplateName": "datepicker",
           "propertyValuesMap": [
             {
               "property": "BorderColor",
@@ -2152,8 +2152,8 @@
           ]
         },
         {
-          "controlTemplateName": "lookup",
           "name": "defaultLookupStyle",
+          "controlTemplateName": "lookup",
           "propertyValuesMap": [
             {
               "property": "BorderColor",
@@ -2294,8 +2294,8 @@
           ]
         },
         {
-          "controlTemplateName": "text",
           "name": "defaultTextStyle",
+          "controlTemplateName": "text",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -2404,8 +2404,8 @@
           ]
         },
         {
-          "controlTemplateName": "text",
           "name": "searchTextStyle",
+          "controlTemplateName": "text",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -2470,8 +2470,8 @@
           ]
         },
         {
-          "controlTemplateName": "slider",
           "name": "defaultSliderStyle",
+          "controlTemplateName": "slider",
           "propertyValuesMap": [
             {
               "property": "BorderColor",
@@ -2532,8 +2532,8 @@
           ]
         },
         {
-          "controlTemplateName": "button",
           "name": "defaultButtonStyle",
+          "controlTemplateName": "button",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -2646,8 +2646,8 @@
           ]
         },
         {
-          "controlTemplateName": "button",
           "name": "cancelButtonStyle",
+          "controlTemplateName": "button",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -2680,42 +2680,42 @@
           ]
         },
         {
-          "controlTemplateName": "button",
           "name": "rezervedOkButtonStyle",
-          "propertyValuesMap": [
-            {
-              "property": "Color",
-              "value": "%Palette.ReservedWhiteColor%"
-            },
-            {
-              "property": "DisabledColor",
-              "value": "%Palette.DisabledTextMainColor%"
-            },
-            {
-              "property": "DisabledFill",
-              "value": "%Palette.DisabledInputBkgColor%"
-            },
-            {
-              "property": "Fill",
-              "value": "%Palette.ReservedInfoColor%"
-            },
-            {
-              "property": "Font",
-              "value": "%Palette.TextBodyFontFace%"
-            },
-            {
-              "property": "FontWeight",
-              "value": "%Palette.TextEmphasisFontWeight%"
-            },
-            {
-              "property": "Size",
-              "value": "%Palette.TextEmphasisFontSize%"
-            }
-          ]
-        },
-        {
           "controlTemplateName": "button",
+          "propertyValuesMap": [
+            {
+              "property": "Color",
+              "value": "%Palette.ReservedWhiteColor%"
+            },
+            {
+              "property": "DisabledColor",
+              "value": "%Palette.DisabledTextMainColor%"
+            },
+            {
+              "property": "DisabledFill",
+              "value": "%Palette.DisabledInputBkgColor%"
+            },
+            {
+              "property": "Fill",
+              "value": "%Palette.ReservedInfoColor%"
+            },
+            {
+              "property": "Font",
+              "value": "%Palette.TextBodyFontFace%"
+            },
+            {
+              "property": "FontWeight",
+              "value": "%Palette.TextEmphasisFontWeight%"
+            },
+            {
+              "property": "Size",
+              "value": "%Palette.TextEmphasisFontSize%"
+            }
+          ]
+        },
+        {
           "name": "rezervedCancelButtonStyle",
+          "controlTemplateName": "button",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -2748,8 +2748,8 @@
           ]
         },
         {
-          "controlTemplateName": "lineChart",
           "name": "defaultLineChartStyle",
+          "controlTemplateName": "lineChart",
           "propertyValuesMap": [
             {
               "property": "DisabledBorderColor",
@@ -2794,8 +2794,8 @@
           ]
         },
         {
-          "controlTemplateName": "lineChart",
           "name": "monochromeAccentLineChartStyle",
+          "controlTemplateName": "lineChart",
           "propertyValuesMap": [
             {
               "property": "DisabledBorderColor",
@@ -2812,54 +2812,54 @@
           ]
         },
         {
-          "controlTemplateName": "pieChart",
           "name": "defaultPieChartStyle",
-          "propertyValuesMap": [
-            {
-              "property": "DisabledBorderColor",
-              "value": "%Palette.DisabledBorderColor%"
-            },
-            {
-              "property": "ItemColorSet",
-              "value": "%Palette.ReservedChartColorSet%"
-            },
-            {
-              "property": "Color",
-              "value": "%Palette.TextMainColor%"
-            },
-            {
-              "property": "BorderColor",
-              "value": "RGBA(0, 0, 0, 1)"
-            },
-            {
-              "property": "PressedBorderColor",
-              "value": "ColorFade(Self.BorderColor, -30%)"
-            },
-            {
-              "property": "HoverBorderColor",
-              "value": "ColorFade(Self.BorderColor, 30%)"
-            },
-            {
-              "property": "BorderStyle",
-              "value": "%BorderStyle.RESERVED%.Solid"
-            },
-            {
-              "property": "BorderThickness",
-              "value": "0"
-            },
-            {
-              "property": "Font",
-              "value": "%Font.RESERVED%.'Open Sans'"
-            },
-            {
-              "property": "Size",
-              "value": "10"
-            }
-          ]
-        },
-        {
           "controlTemplateName": "pieChart",
+          "propertyValuesMap": [
+            {
+              "property": "DisabledBorderColor",
+              "value": "%Palette.DisabledBorderColor%"
+            },
+            {
+              "property": "ItemColorSet",
+              "value": "%Palette.ReservedChartColorSet%"
+            },
+            {
+              "property": "Color",
+              "value": "%Palette.TextMainColor%"
+            },
+            {
+              "property": "BorderColor",
+              "value": "RGBA(0, 0, 0, 1)"
+            },
+            {
+              "property": "PressedBorderColor",
+              "value": "ColorFade(Self.BorderColor, -30%)"
+            },
+            {
+              "property": "HoverBorderColor",
+              "value": "ColorFade(Self.BorderColor, 30%)"
+            },
+            {
+              "property": "BorderStyle",
+              "value": "%BorderStyle.RESERVED%.Solid"
+            },
+            {
+              "property": "BorderThickness",
+              "value": "0"
+            },
+            {
+              "property": "Font",
+              "value": "%Font.RESERVED%.'Open Sans'"
+            },
+            {
+              "property": "Size",
+              "value": "10"
+            }
+          ]
+        },
+        {
           "name": "monochromeAccentPieChartStyle",
+          "controlTemplateName": "pieChart",
           "propertyValuesMap": [
             {
               "property": "DisabledBorderColor",
@@ -2876,8 +2876,8 @@
           ]
         },
         {
-          "controlTemplateName": "barChart",
           "name": "defaultBarChartStyle",
+          "controlTemplateName": "barChart",
           "propertyValuesMap": [
             {
               "property": "DisabledBorderColor",
@@ -2922,8 +2922,8 @@
           ]
         },
         {
-          "controlTemplateName": "barChart",
           "name": "monochromeAccentBarChartStyle",
+          "controlTemplateName": "barChart",
           "propertyValuesMap": [
             {
               "property": "DisabledBorderColor",
@@ -2940,8 +2940,8 @@
           ]
         },
         {
-          "controlTemplateName": "legend",
           "name": "defaultLegendStyle",
+          "controlTemplateName": "legend",
           "propertyValuesMap": [
             {
               "property": "DisabledColor",
@@ -2998,8 +2998,8 @@
           ]
         },
         {
-          "controlTemplateName": "rectangle",
           "name": "separatorShapeStyle",
+          "controlTemplateName": "rectangle",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -3012,8 +3012,8 @@
           ]
         },
         {
-          "controlTemplateName": "videoPlayback",
           "name": "defaultVideoPlaybackStyle",
+          "controlTemplateName": "videoPlayback",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -3034,8 +3034,8 @@
           ]
         },
         {
-          "controlTemplateName": "timer",
           "name": "defaultTimerStyle",
+          "controlTemplateName": "timer",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -3112,8 +3112,8 @@
           ]
         },
         {
-          "controlTemplateName": "triangle",
           "name": "defaultTriangleStyle",
+          "controlTemplateName": "triangle",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -3150,8 +3150,8 @@
           ]
         },
         {
-          "controlTemplateName": "star",
           "name": "defaultStarStyle",
+          "controlTemplateName": "star",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -3164,8 +3164,8 @@
           ]
         },
         {
-          "controlTemplateName": "pentagon",
           "name": "defaultPentagonStyle",
+          "controlTemplateName": "pentagon",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -3202,8 +3202,8 @@
           ]
         },
         {
-          "controlTemplateName": "partialCircle",
           "name": "defaultPartialCircleStyle",
+          "controlTemplateName": "partialCircle",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -3216,8 +3216,8 @@
           ]
         },
         {
-          "controlTemplateName": "octagon",
           "name": "defaultOctagonStyle",
+          "controlTemplateName": "octagon",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -3254,8 +3254,8 @@
           ]
         },
         {
-          "controlTemplateName": "hexagon",
           "name": "defaultHexagonStyle",
+          "controlTemplateName": "hexagon",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -3292,8 +3292,8 @@
           ]
         },
         {
-          "controlTemplateName": "hexagon",
           "name": "primary2HexagonStyle",
+          "controlTemplateName": "hexagon",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -3306,8 +3306,8 @@
           ]
         },
         {
-          "controlTemplateName": "hexagon",
           "name": "primary3HexagonStyle",
+          "controlTemplateName": "hexagon",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -3320,8 +3320,8 @@
           ]
         },
         {
-          "controlTemplateName": "hexagon",
           "name": "primary3FadeHexagonStyle",
+          "controlTemplateName": "hexagon",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -3334,8 +3334,8 @@
           ]
         },
         {
-          "controlTemplateName": "hexagon",
           "name": "screenHexagonStyle",
+          "controlTemplateName": "hexagon",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -3348,8 +3348,8 @@
           ]
         },
         {
-          "controlTemplateName": "circle",
           "name": "defaultCircleStyle",
+          "controlTemplateName": "circle",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -3382,8 +3382,8 @@
           ]
         },
         {
-          "controlTemplateName": "circle",
           "name": "primary2CircleStyle",
+          "controlTemplateName": "circle",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -3396,8 +3396,8 @@
           ]
         },
         {
-          "controlTemplateName": "circle",
           "name": "primary3CircleStyle",
+          "controlTemplateName": "circle",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -3410,8 +3410,8 @@
           ]
         },
         {
-          "controlTemplateName": "circle",
           "name": "primary3FadeCircleStyle",
+          "controlTemplateName": "circle",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -3424,8 +3424,8 @@
           ]
         },
         {
-          "controlTemplateName": "arrow",
           "name": "defaultArrowStyle",
+          "controlTemplateName": "arrow",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -3442,8 +3442,8 @@
           ]
         },
         {
-          "controlTemplateName": "icon",
           "name": "defaultIconStyle",
+          "controlTemplateName": "icon",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -3508,8 +3508,8 @@
           ]
         },
         {
-          "controlTemplateName": "icon",
           "name": "primary1IconStyle",
+          "controlTemplateName": "icon",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -3530,8 +3530,8 @@
           ]
         },
         {
-          "controlTemplateName": "icon",
           "name": "primary3IconStyle",
+          "controlTemplateName": "icon",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -3552,8 +3552,8 @@
           ]
         },
         {
-          "controlTemplateName": "icon",
           "name": "invertedBkgHeaderIconStyle",
+          "controlTemplateName": "icon",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -3578,8 +3578,8 @@
           ]
         },
         {
-          "controlTemplateName": "microphone",
           "name": "defaultMicrophoneStyle",
+          "controlTemplateName": "microphone",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -3640,8 +3640,8 @@
           ]
         },
         {
-          "controlTemplateName": "barcode",
           "name": "defaultBarcodeStyle",
+          "controlTemplateName": "barcode",
           "propertyValuesMap": [
             {
               "property": "BorderColor",
@@ -3650,8 +3650,8 @@
           ]
         },
         {
-          "controlTemplateName": "barcodeScanner",
           "name": "defaultBarcodeScannerStyle",
+          "controlTemplateName": "barcodeScanner",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -3764,8 +3764,8 @@
           ]
         },
         {
-          "controlTemplateName": "camera",
           "name": "defaultCameraStyle",
+          "controlTemplateName": "camera",
           "propertyValuesMap": [
             {
               "property": "BorderColor",
@@ -3774,8 +3774,8 @@
           ]
         },
         {
-          "controlTemplateName": "inkControl",
           "name": "defaultInkControlStyle",
+          "controlTemplateName": "inkControl",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -3804,8 +3804,8 @@
           ]
         },
         {
-          "controlTemplateName": "import",
           "name": "defaultImportStyle",
+          "controlTemplateName": "import",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -3898,8 +3898,8 @@
           ]
         },
         {
-          "controlTemplateName": "image",
           "name": "defaultImageStyle",
+          "controlTemplateName": "image",
           "propertyValuesMap": [
             {
               "property": "BorderColor",
@@ -3980,8 +3980,8 @@
           ]
         },
         {
-          "controlTemplateName": "htmlviewer",
           "name": "defaultHtmlViewerStyle",
+          "controlTemplateName": "htmlviewer",
           "propertyValuesMap": [
             {
               "property": "DisabledBorderColor",
@@ -3998,8 +3998,8 @@
           ]
         },
         {
-          "controlTemplateName": "htmlviewer",
           "name": "typedDataCardHtmlViewerStyle",
+          "controlTemplateName": "htmlviewer",
           "propertyValuesMap": [
             {
               "property": "DisabledBorderColor",
@@ -4020,8 +4020,8 @@
           ]
         },
         {
-          "controlTemplateName": "export",
           "name": "defaultExportStyle",
+          "controlTemplateName": "export",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -4114,8 +4114,8 @@
           ]
         },
         {
-          "controlTemplateName": "addMedia",
           "name": "defaultAddMediaStyle",
+          "controlTemplateName": "addMedia",
           "propertyValuesMap": [
             {
               "property": "Color",
@@ -4212,8 +4212,8 @@
           ]
         },
         {
-          "controlTemplateName": "audioPlayback",
           "name": "defaultAudioPlaybackStyle",
+          "controlTemplateName": "audioPlayback",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -4234,8 +4234,8 @@
           ]
         },
         {
-          "controlTemplateName": "rectangle",
           "name": "defaultRectangleStyle",
+          "controlTemplateName": "rectangle",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -4272,8 +4272,8 @@
           ]
         },
         {
-          "controlTemplateName": "rectangle",
           "name": "primary2RectangleStyle",
+          "controlTemplateName": "rectangle",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -4286,8 +4286,8 @@
           ]
         },
         {
-          "controlTemplateName": "rectangle",
           "name": "primary3RectangleStyle",
+          "controlTemplateName": "rectangle",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -4300,8 +4300,8 @@
           ]
         },
         {
-          "controlTemplateName": "rectangle",
           "name": "primary3FadeRectangleStyle",
+          "controlTemplateName": "rectangle",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -4314,8 +4314,8 @@
           ]
         },
         {
-          "controlTemplateName": "rectangle",
           "name": "grayRectangleStyle",
+          "controlTemplateName": "rectangle",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -4328,8 +4328,8 @@
           ]
         },
         {
-          "controlTemplateName": "rectangle",
           "name": "invertedBackgroundRectangleStyle",
+          "controlTemplateName": "rectangle",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -4342,8 +4342,8 @@
           ]
         },
         {
-          "controlTemplateName": "rectangle",
           "name": "overlayRectangleStyle",
+          "controlTemplateName": "rectangle",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -4356,8 +4356,8 @@
           ]
         },
         {
-          "controlTemplateName": "typedDataCard",
           "name": "defaultTypedDataCardStyle",
+          "controlTemplateName": "typedDataCard",
           "propertyValuesMap": [
             {
               "property": "BorderColor",
@@ -4366,8 +4366,8 @@
           ]
         },
         {
-          "controlTemplateName": "entityForm",
           "name": "defaultEntityFormStyle",
+          "controlTemplateName": "entityForm",
           "propertyValuesMap": [
             {
               "property": "TextColor",
@@ -4420,8 +4420,8 @@
           ]
         },
         {
-          "controlTemplateName": "dataGrid",
           "name": "defaultDataGridStyle",
+          "controlTemplateName": "dataGrid",
           "propertyValuesMap": [
             {
               "property": "LinkColor",
@@ -4510,8 +4510,8 @@
           ]
         },
         {
-          "controlTemplateName": "powerbi",
           "name": "defaultPowerbiStyle",
+          "controlTemplateName": "powerbi",
           "propertyValuesMap": [
             {
               "property": "BorderColor",
@@ -4520,8 +4520,8 @@
           ]
         },
         {
-          "controlTemplateName": "microsoftStreamPlayback",
           "name": "defaultMicrosoftStreamPlaybackStyle",
+          "controlTemplateName": "microsoftStreamPlayback",
           "propertyValuesMap": [
             {
               "property": "BorderColor",
@@ -4546,8 +4546,8 @@
           ]
         },
         {
-          "controlTemplateName": "form",
           "name": "defaultFormStyle",
+          "controlTemplateName": "form",
           "propertyValuesMap": [
             {
               "property": "BorderColor",
@@ -4556,8 +4556,8 @@
           ]
         },
         {
-          "controlTemplateName": "formViewer",
           "name": "defaultFormViewerStyle",
+          "controlTemplateName": "formViewer",
           "propertyValuesMap": [
             {
               "property": "BorderColor",
@@ -4566,8 +4566,8 @@
           ]
         },
         {
-          "controlTemplateName": "pdfViewer",
           "name": "defaultPdfViewerStyle",
+          "controlTemplateName": "pdfViewer",
           "propertyValuesMap": [
             {
               "property": "Fill",
@@ -4580,8 +4580,8 @@
           ]
         },
         {
-          "controlTemplateName": "gallery",
           "name": "defaultGalleryStyle",
+          "controlTemplateName": "gallery",
           "propertyValuesMap": [
             {
               "property": "BorderColor",
@@ -4590,8 +4590,8 @@
           ]
         },
         {
-          "controlTemplateName": "richTextEditor",
           "name": "defaultRichTextEditorStyle",
+          "controlTemplateName": "richTextEditor",
           "propertyValuesMap": [
             {
               "property": "BorderColor",
@@ -4600,8 +4600,8 @@
           ]
         },
         {
-          "controlTemplateName": "dataTable",
           "name": "defaultDataTableStyle",
+          "controlTemplateName": "dataTable",
           "propertyValuesMap": [
             {
               "property": "LinkColor",
