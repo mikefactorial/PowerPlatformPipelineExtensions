@@ -113,7 +113,8 @@ jobs:
       # Create Pull Request
       - name: create pull request
         run: |
-          $prUrl = gh pr create -B ${{ github.event.inputs.source_branch }} -H ${{ github.event.inputs.target_branch }} --title 'Merge solution branch into main' --body 'Created by Github action'
+          prUrl = gh pr create -B ${{ github.event.inputs.source_branch }} -H ${{ github.event.inputs.target_branch }} --title 'Merge solution branch into main' --body 'Created by Github action'
+          echo "PR URL: $prUrl"
           echo "$prUrl" >> "$GITHUB_OUTPUT"
         id: create_pr
         env:
