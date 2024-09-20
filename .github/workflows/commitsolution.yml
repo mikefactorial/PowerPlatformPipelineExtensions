@@ -109,8 +109,25 @@ jobs:
           } else {
               git push -f origin ${{ github.event.inputs.source_branch }}
           }
+      
       # Create Pull Request
       - name: create pull request
         run: gh pr create -B ${{ github.event.inputs.source_branch }} -H ${{ github.event.inputs.target_branch }} --title 'Merge solution branch into main' --body 'Created by Github action'
+        id: create_pr
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      # Send the PR Approval
+      - name: start pull request approval
+        shell: pwsh
+        run: |
+            $requestBody = @{
+                PullRequestUrl = '${{join(steps.create_pr.outputs.*, "")}}'
+                DeploymentStageRunId = "${{ github.event.inputs.deployment_stagerunid }}"
+                SolutionName = "${{ github.event.inputs.solution_name }}"
+            }
+            $jsonBody = $requestBody | ConvertTo-Json
+            Write-Host $jsonBody
+            $response = Invoke-RestMethod ${{secrets.APPROVAL_URL}} -Method 'POST' -Headers $headers -Body $jsonBody
+        env:
+            APPROVAL_URL: ${{secrets.APPROVAL_URL}}   
