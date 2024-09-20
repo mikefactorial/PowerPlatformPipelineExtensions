@@ -37,7 +37,7 @@
           "inputs": {
             "statusCode": 200,
             "body": {
-              "fromFlow": "Daily CAT Tasks"
+              "fromFlow": "Daily Cat Tasks"
             },
             "schema": {
               "properties": {
@@ -52,7 +52,7 @@
       },
       "outputs": {}
     },
-    "templateName": null
+    "templateName": ""
   },
   "schemaVersion": "1.0.0.0"
 }
