@@ -9,6 +9,15 @@
         "api": {
           "name": "shared_commondataserviceforapps"
         }
+      },
+      "shared_sendmail": {
+        "runtimeSource": "invoker",
+        "connection": {
+          "connectionReferenceLogicalName": "mf_sharedsendmail_f9e94"
+        },
+        "api": {
+          "name": "shared_sendmail"
+        }
       }
     },
     "definition": {
@@ -76,6 +85,30 @@
               "entityName": "cat_almacceleratorsamples",
               "item/cat_name": "Quote Like",
               "item/cat_details": "@triggerBody()['text']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Send_an_email_notification_(V3)": {
+          "runAfter": {
+            "Create_a_Quote_Like_record": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "62935029-7289-4f3a-a24b-33d1866ef27f"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_sendmail",
+              "operationId": "SendEmailV3",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_sendmail"
+            },
+            "parameters": {
+              "request/to": "mike@mikefactorial.com;",
+              "request/subject": "Here's the cat fact you liked",
+              "request/text": "<p>@{triggerBody()['text']}</p>"
             },
             "authentication": "@parameters('$authentication')"
           }
