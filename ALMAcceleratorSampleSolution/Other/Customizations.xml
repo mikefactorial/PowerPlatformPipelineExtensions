@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities />
+  <Roles />
+  <Workflows />
+  <FieldSecurityProfiles />
+  <Templates />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings />
+  <optionsets />
+  <CustomControls />
+  <ServiceEndpoints />
+  <AppModuleSiteMaps />
+  <AppModules />
+  <EntityDataProviders />
+  <CanvasApps />
+  <Connectors />
+  <connectionreferences>
+    <connectionreference connectionreferencelogicalname="cat_CDS_Current">
+      <connectionreferencedisplayname>CDS_Current</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="cat_sharedoffice365_4ee46">
+      <connectionreferencedisplayname>Office 365 Outlook</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_office365</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+  </connectionreferences>
+  <msdyn_dataflows>
+    <msdyn_dataflow msdyn_dataflowid="8a1b00c9-0091-ed11-aad1-000d3a32af20">
+      <iscustomizable>1</iscustomizable>
+      <msdyn_destinationadls>BYOL</msdyn_destinationadls>
+      <msdyn_internalversion>6a128236-28d0-44f4-a5d5-6f5d39b41495</msdyn_internalversion>
+      <msdyn_mashupdocument>section Section1;
+shared account = let
+  Source = CommonDataService.Database("alm-accelerator-dev.crm.dynamics.com", [CreateNavigationProperties = null]),
+  #"Navigation 1" = Source{[Schema = "dbo", Item = "account"]}[Data],
+  #"From Value" = Table.FromValue(#"Navigation 1"),
+  #"Remove Columns" = Table.RemoveColumns(#"From Value", Table.ColumnsOfType(#"From Value", {type table, type record, type list, type nullable binary, type binary, type function}))
+in
+  #"Remove Columns";
+shared cat_almacceleratorsample = let
+  Source = CommonDataService.Database("alm-accelerator-dev.crm.dynamics.com", [CreateNavigationProperties = null]),
+  #"Navigation 1" = Source{[Schema = "dbo", Item = "cat_almacceleratorsample"]}[Data],
+  #"From Value" = Table.FromValue(#"Navigation 1"),
+  #"Remove Columns" = Table.RemoveColumns(#"From Value", Table.ColumnsOfType(#"From Value", {type table, type record, type list, type nullable binary, type binary, type function}))
+in
+  #"Remove Columns";
+</msdyn_mashupdocument>
+      <msdyn_mashupsettings>{"QueryGroups":null,"DocumentLocale":"en-US","QueriesMetadata":{"account":{"QueryId":"c87addc5-fb27-433d-b1b5-6b5a9ca3b315","QueryName":"account","QueryGroupId":null,"EntityName":null,"LastKnownIsCalculatedEntity":false,"LastKnownIsLinkedEntity":false,"LastKnownIsParameter":false,"IsHidden":null,"LastKnownResultTypeName":"table","LoadEnabled":true,"DeleteExistingDataOnLoad":false,"FieldsMetadata":{},"HostProperties":{"StorageId":"ABCD0000-0000-0000-0000-00000000DCBA","DataflowRefreshOutputFileFormat":"Csv","ServiceFeatureFlag_EnableDataflowImported":"True","ServiceFeatureFlag_EnableNewCdstDataflowOrchestration":"True","EnvironmentId":null},"JsonOutputDestinations":null,"BindToDefaultOutputDestination":null,"JsonIncrementalRefreshSettings":null,"JsonStagingDefinition":null},"cat_almacceleratorsample":{"QueryId":"dab99a07-1a96-48bb-946c-2f3a4ce7bb29","QueryName":"cat_almacceleratorsample","QueryGroupId":null,"EntityName":null,"LastKnownIsCalculatedEntity":false,"LastKnownIsLinkedEntity":false,"LastKnownIsParameter":false,"IsHidden":null,"LastKnownResultTypeName":"table","LoadEnabled":true,"DeleteExistingDataOnLoad":false,"FieldsMetadata":{},"HostProperties":{"StorageId":"ABCD0000-0000-0000-0000-00000000DCBA","DataflowRefreshOutputFileFormat":"Csv","ServiceFeatureFlag_EnableDataflowImported":"True","ServiceFeatureFlag_EnableNewCdstDataflowOrchestration":"True","EnvironmentId":null},"JsonOutputDestinations":null,"BindToDefaultOutputDestination":null,"JsonIncrementalRefreshSettings":null,"JsonStagingDefinition":null}},"FastCombine":false,"AllowNativeQueries":false,"HostContext":{"Type":"PowerPlatformDataflowAdlsGen2","Details":{"EnvironmentId":"babf240f-23cd-436a-88ea-3de2a99f6a1b"}},"HostProperties":null,"SkipAutomaticTypeAndHeaderDetection":false,"DisableAutoAnonymousConnectionUpsert":false,"AllowedModules":null,"DataflowMetadata":"{\"DataflowType\":\"Adls\",\"DataflowId\":\"23ef13f7-7be0-4d4b-ac70-683bbc224e53\",\"OwnerUserId\":\"68e602d7-fab5-4335-8dbd-cc33c8d45c9e\",\"OwnerName\":null,\"OwnerTenantId\":\"4e32a00f-83d6-404d-9001-251190c9385f\",\"GatewayObjectId\":null,\"ModelSnapshotUri\":\"\",\"GroupId\":\"babf240f-23cd-436a-88ea-3de2a99f6a1b\",\"DataflowState\":\"Source\",\"LastUpdateTime\":\"2024-09-20T16:38:05.0501079+00:00\",\"LastStateChangedTime\":\"2024-09-20T16:38:05.0501079+00:00\",\"CreatedTime\":\"2024-09-20T16:24:45.3746332+00:00\",\"ExpiresAfter\":null,\"AllowedModules\":null,\"UseHostConnectionProvider\":null,\"SkipAutomaticTypeAndHeaderDetection\":null,\"EditingSessionId\":null,\"HostInformation\":null,\"HostContext\":{\"Type\":\"PowerPlatformDataflowAdlsGen2\",\"Details\":{\"EnvironmentId\":\"babf240f-23cd-436a-88ea-3de2a99f6a1b\"}},\"HostProperties\":{\"StorageId\":\"ABCD0000-0000-0000-0000-00000000DCBA\",\"DataflowRefreshOutputFileFormat\":\"Csv\",\"ServiceFeatureFlag_EnableDataflowImported\":\"True\",\"ServiceFeatureFlag_EnableNewCdstDataflowOrchestration\":\"True\",\"EnvironmentId\":null},\"DisableAutoAnonymousConnectionUpsert\":null,\"RelatedDataflowId\":null,\"TrustedConnections\":null,\"ConnectionOverrides\":null}","Dataflow":"{\"name\":\"Sample Data Flow\",\"ppdf:dataflowId\":\"23ef13f7-7be0-4d4b-ac70-683bbc224e53\",\"ppdf:owner\":{\"tenantId\":\"4e32a00f-83d6-404d-9001-251190c9385f\",\"userId\":\"68e602d7-fab5-4335-8dbd-cc33c8d45c9e\"},\"ppdf:fastCopy\":false,\"version\":\"0\",\"culture\":\"en-US\",\"ppdf:outputFileFormat\":\"Csv\",\"pbi:mashup\":{\"fastCombine\":false,\"allowNativeQueries\":false,\"queriesMetadata\":{\"account\":{\"queryId\":\"c87addc5-fb27-433d-b1b5-6b5a9ca3b315\",\"queryName\":\"account\",\"loadEnabled\":true,\"lastKnownResultTypeName\":\"table\",\"lastKnownIsCalculatedEntity\":false,\"lastKnownIsLinkedEntity\":false,\"lastKnownIsParameter\":false,\"deleteExistingDataOnLoad\":false,\"hostProperties\":{\"StorageId\":\"ABCD0000-0000-0000-0000-00000000DCBA\",\"DataflowRefreshOutputFileFormat\":\"Csv\",\"ServiceFeatureFlag_EnableDataflowImported\":\"True\",\"ServiceFeatureFlag_EnableNewCdstDataflowOrchestration\":\"True\",\"EnvironmentId\":null}},\"cat_almacceleratorsample\":{\"queryId\":\"dab99a07-1a96-48bb-946c-2f3a4ce7bb29\",\"queryName\":\"cat_almacceleratorsample\",\"loadEnabled\":true,\"lastKnownResultTypeName\":\"table\",\"lastKnownIsCalculatedEntity\":false,\"lastKnownIsLinkedEntity\":false,\"lastKnownIsParameter\":false,\"deleteExistingDataOnLoad\":false,\"hostProperties\":{\"StorageId\":\"ABCD0000-0000-0000-0000-00000000DCBA\",\"DataflowRefreshOutputFileFormat\":\"Csv\",\"ServiceFeatureFlag_EnableDataflowImported\":\"True\",\"ServiceFeatureFlag_EnableNewCdstDataflowOrchestration\":\"True\",\"EnvironmentId\":null}}},\"document\":\"section Section1;\\nshared account = let\\n  Source = CommonDataService.Database(\\\"alm-accelerator-dev.crm.dynamics.com\\\", [CreateNavigationProperties = null]),\\n  #\\\"Navigation 1\\\" = Source{[Schema = \\\"dbo\\\", Item = \\\"account\\\"]}[Data],\\n  #\\\"From Value\\\" = Table.FromValue(#\\\"Navigation 1\\\"),\\n  #\\\"Remove Columns\\\" = Table.RemoveColumns(#\\\"From Value\\\", Table.ColumnsOfType(#\\\"From Value\\\", {type table, type record, type list, type nullable binary, type binary, type function}))\\nin\\n  #\\\"Remove Columns\\\";\\nshared cat_almacceleratorsample = let\\n  Source = CommonDataService.Database(\\\"alm-accelerator-dev.crm.dynamics.com\\\", [CreateNavigationProperties = null]),\\n  #\\\"Navigation 1\\\" = Source{[Schema = \\\"dbo\\\", Item = \\\"cat_almacceleratorsample\\\"]}[Data],\\n  #\\\"From Value\\\" = Table.FromValue(#\\\"Navigation 1\\\"),\\n  #\\\"Remove Columns\\\" = Table.RemoveColumns(#\\\"From Value\\\", Table.ColumnsOfType(#\\\"From Value\\\", {type table, type record, type list, type nullable binary, type binary, type function}))\\nin\\n  #\\\"Remove Columns\\\";\\n\"},\"annotations\":[{\"name\":\"pbi:QueryGroups\",\"value\":\"null\"}]}"}</msdyn_mashupsettings>
+      <msdyn_name>Sample Data Flow</msdyn_name>
+      <msdyn_originaldataflowid>23ef13f7-7be0-4d4b-ac70-683bbc224e53</msdyn_originaldataflowid>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </msdyn_dataflow>
+  </msdyn_dataflows>
+  <Languages>
+    <Language>1033</Language>
+  </Languages>
+</ImportExportXml>
