@@ -112,7 +112,7 @@ jobs:
       
       # Create Pull Request
       - name: create pull request
-        run: gh pr create -B ${{ github.event.inputs.source_branch }} -H ${{ github.event.inputs.target_branch }} --title 'Merge solution branch into main' --body 'Created by Github action'
+        run: gh pr create -B ${{ github.event.inputs.source_branch }} -H ${{ github.event.inputs.target_branch }} --title 'Merge solution branch into main' --body 'Created by Github action' >> $GITHUB_OUTPUT
         id: create_pr
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -122,12 +122,13 @@ jobs:
         shell: pwsh
         run: |
             $requestBody = @{
-                PullRequestUrl = "${{join(steps.create_pr.outputs.*, '')}}"
+                PullRequestUrl = "$env:PR_URL"
                 DeploymentStageRunId = "${{ github.event.inputs.deployment_stagerunid }}"
                 SolutionName = "${{ github.event.inputs.solution_name }}"
             }
             $jsonBody = $requestBody | ConvertTo-Json
             Write-Host $jsonBody
-            $response = Invoke-RestMethod ${{secrets.APPROVAL_URL}} -Method 'POST' -Body $jsonBody
+            $response = Invoke-RestMethod $env:APPROVAL_URL -Method 'POST' -Body $jsonBody
         env:
             APPROVAL_URL: ${{secrets.APPROVAL_URL}}   
+            PR_URL: ${{join(steps.create_pr.outputs.*, '')}}
