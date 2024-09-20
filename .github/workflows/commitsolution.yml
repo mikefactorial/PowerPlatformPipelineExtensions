@@ -122,7 +122,7 @@ jobs:
         shell: pwsh
         run: |
             $requestBody = @{
-                PullRequestUrl = '${{join(steps.create_pr.outputs.*, "")}}'
+                PullRequestUrl = "${{join(steps.create_pr.outputs.*, '')}}"
                 DeploymentStageRunId = "${{ github.event.inputs.deployment_stagerunid }}"
                 SolutionName = "${{ github.event.inputs.solution_name }}"
             }
