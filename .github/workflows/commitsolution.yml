@@ -128,9 +128,9 @@ jobs:
                 PullRequestUrl = "${{ steps.create_pr.outputs.pull_request_number }}"
                 DeploymentStageRunId = "${{ github.event.inputs.deployment_stagerunid }}"
                 SolutionName = "${{ github.event.inputs.solution_name }}"
-                PullRequestNumber = $urlSplit[$urlSplit.Length - 1]
+                PullRequestNumber = [int]$urlSplit[$urlSplit.Length - 1]
                 RepositoryOwner = "${{ github.repository_owner }}"
-                RepositoryName = "${{ github.repository }}"
+                RepositoryName = "${{ github.event.repository.name }}"
             }
             $jsonBody = $requestBody | ConvertTo-Json
             Write-Host $jsonBody
