@@ -91,7 +91,7 @@
           "Description"
         ],
         "IsLocked": false,
-        "ControlUniqueId": "19",
+        "ControlUniqueId": "18",
         "Children": [
           {
             "Type": "ControlInfo",
@@ -198,7 +198,7 @@
               "Step7"
             ],
             "IsLocked": false,
-            "ControlUniqueId": "20",
+            "ControlUniqueId": "19",
             "Children": []
           }
         ]
