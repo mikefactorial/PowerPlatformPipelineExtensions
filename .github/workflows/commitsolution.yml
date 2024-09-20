@@ -109,36 +109,8 @@ jobs:
           } else {
               git push -f origin ${{ github.event.inputs.source_branch }}
           }
-      # Update the pipeline stage record
-      - name: update the pipeline stage record
+      # Create Pull Request
+      - name: create pull request
+        run: gh pr create -B ${{ github.event.inputs.source_branch }} -H ${{ github.event.inputs.target_branch }} --title 'Merge solution branch into main' --body 'Created by Github action'
         env:
-            CLIENT_ID: ${{secrets.CLIENT_ID}}   
-            TENANT_ID: ${{secrets.TENANT_ID}}   
-            CLIENT_SECRET: ${{secrets.CLIENT_SECRET}}
-        shell: pwsh
-        run: |
-            $aadHost = "login.microsoftonline.com"
-            $url = "${{ github.event.inputs.artifact_url }}"
-            $options = [System.StringSplitOptions]::RemoveEmptyEntries
-            $dataverseHost = $url.Split("://", $options)[1].Split("/")[0]
-
-            $body = @{client_id = $env:CLIENT_ID; client_secret = $env:CLIENT_SECRET; grant_type = "client_credentials"; scope = "https://$dataverseHost/.default"; }
-            $OAuthReq = Invoke-RestMethod -Method Post -Uri "https://$aadHost/$env:TENANT_ID/oauth2/v2.0/token" -Body $body
-            $spnToken = $OAuthReq.access_token
-            $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
-            $headers.Add("Authorization", "Bearer $spnToken")
-            $headers.Add("Content-Type", "application/json")
-
-            # Set up the request body
-            $successStatus = 20
-            $failedStatus = 30
-            $requestBody = @{
-                StageRunId = "${{ github.event.inputs.deployment_stagerunid }}"
-                PreDeploymentStepStatus = "$successStatus"
-            }
-            $jsonBody = $requestBody | ConvertTo-Json
-            Write-Host $jsonBody
-            # Update the deployment stage record ($dataverseHost UpdatePreDeploymentStepStatus)
-            $requestUrlRemainder = "UpdatePreDeploymentStepStatus"
-            $requestUrl = "https://$dataverseHost/api/data/v9.2/$requestUrlRemainder"
-            $response = Invoke-RestMethod $requestUrl -Method 'POST' -Headers $headers -Body $jsonBody
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
