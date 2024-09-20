@@ -37,7 +37,7 @@
           "inputs": {
             "statusCode": 200,
             "body": {
-              "fromFlow": "Daily Cat Tasks"
+              "fromFlow": "Daily Cat Facts"
             },
             "schema": {
               "properties": {
