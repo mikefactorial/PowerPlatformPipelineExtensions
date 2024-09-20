@@ -112,10 +112,7 @@ jobs:
       
       # Create Pull Request
       - name: create pull request
-        run: |
-          prUrl = gh pr create -B ${{ github.event.inputs.source_branch }} -H ${{ github.event.inputs.target_branch }} --title 'Merge solution branch into main' --body 'Created by Github action'
-          echo "PR URL: $prUrl"
-          echo "$prUrl" >> "$GITHUB_OUTPUT"
+        run: echo "::set-output name=pull_request_number::$(gh pr create -B ${{ github.event.inputs.source_branch }} -H ${{ github.event.inputs.target_branch }} --title 'Merge solution branch into main' --body 'Created by Github action' || echo "")"
         id: create_pr
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -128,7 +125,7 @@ jobs:
             $headers.Add("Content-Type", "application/json")
 
             $requestBody = @{
-                PullRequestUrl = "$env:GITHUB_OUTPUT"
+                PullRequestUrl = "${{ steps.create_pr.outputs.pull_request_number }}"
                 DeploymentStageRunId = "${{ github.event.inputs.deployment_stagerunid }}"
                 SolutionName = "${{ github.event.inputs.solution_name }}"
             }
