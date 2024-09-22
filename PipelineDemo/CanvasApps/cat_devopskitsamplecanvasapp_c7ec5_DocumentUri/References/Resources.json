@@ -1,0 +1,28 @@
+{
+  "Resources": [
+    {
+      "Name": "SampleImage",
+      "Schema": "i",
+      "IsSampleData": true,
+      "IsWritable": false,
+      "Type": "ResourceInfo",
+      "FileName": "/ctrllib/image/images/SampleImage.svg",
+      "Path": "/ctrllib/image/images/SampleImage.svg",
+      "Content": "Image",
+      "ResourceKind": "Uri",
+      "RootPath": "ms-appx:///ctrllib/image/images/SampleImage.svg"
+    },
+    {
+      "Name": "powercat",
+      "Schema": "i",
+      "IsSampleData": false,
+      "IsWritable": false,
+      "Type": "ResourceInfo",
+      "FileName": "9f07ec96-a6f6-4168-bbb0-080c729173fd.jpg",
+      "Path": "Assets\\Images\\9f07ec96-a6f6-4168-bbb0-080c729173fd.jpg",
+      "Content": "Image",
+      "ResourceKind": "LocalFile",
+      "RootPath": "https://docserverpwaprodwus.blob.core.windows.net/24c63821-ef0e-436a-a56a-6e561f5ace6f-1/resource/Assets0Images09f07ec96-a6f6-4168-bbb0-080c729173fd.jpg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-09-20T20%3A17%3A30Z&ske=2024-09-21T20%3A32%3A30Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-09-21T20%3A32%3A30Z&sr=b&sp=r&sig=Jm5DuELVMV1KGCFY7j%2BbGPdS8R1z1q2qih6grEfhmaU%3D"
+    }
+  ]
+}
