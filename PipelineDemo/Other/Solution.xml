@@ -1,23 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.24082.192" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.24101.200" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.24101.200" OrganizationSchemaType="Full" CRMServerServiceabilityVersion="9.2.24102.00194">
   <SolutionManifest>
     <UniqueName>PipelineDemo</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Pipeline Demo" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.4</Version>
+    <Version>1.0.0.7</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>mikefactorial</UniqueName>
       <LocalizedNames>
-        <LocalizedName description="Mike!" languagecode="1033" />
+        <LocalizedName description="mikefactorial" languagecode="1033" />
       </LocalizedNames>
-      <Descriptions />
+      <Descriptions>
+        <Description description="mikefactorial" languagecode="1033" />
+      </Descriptions>
       <EMailAddress xsi:nil="true"></EMailAddress>
       <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
       <CustomizationPrefix>mf</CustomizationPrefix>
-      <CustomizationOptionValuePrefix>97959</CustomizationOptionValuePrefix>
+      <CustomizationOptionValuePrefix>54712</CustomizationOptionValuePrefix>
       <Addresses>
         <Address>
           <AddressNumber>1</AddressNumber>
@@ -86,8 +88,14 @@
       <RootComponent type="300" schemaName="cat_devopskitsamplecanvasapp_c7ec5" behavior="0" />
       <RootComponent type="372" id="{b464e249-0bf7-48c0-8350-24476349bac1}" schemaName="cat_5Fenvironmentvariableconnector" behavior="0" />
       <RootComponent type="62" schemaName="cat_AlmAcceleratorSampleMda" behavior="0" />
+      <RootComponent type="80" schemaName="cat_AlmAcceleratorSampleMda" behavior="0" />
       <RootComponent type="95" id="{ba34c8ae-e6a2-ed11-aad1-000d3a32af20}" behavior="0" />
     </RootComponents>
-    <MissingDependencies />
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="cat_AlmAcceleratorSampleMda" displayName="CAT Planner Sample Admin" />
+      </MissingDependency>
+    </MissingDependencies>
   </SolutionManifest>
 </ImportExportXml>
