@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.24084.202" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.24084.202" OrganizationSchemaType="Full" CRMServerServiceabilityVersion="9.2.24084.00202">
+<ImportExportXml version="9.2.24101.200" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" OrganizationVersion="9.2.24101.200" OrganizationSchemaType="Full" CRMServerServiceabilityVersion="9.2.24102.00194">
   <SolutionManifest>
     <UniqueName>PipelineDemo</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Pipeline Demo" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.5</Version>
+    <Version>1.0.0.6</Version>
     <Managed>2</Managed>
     <Publisher>
       <UniqueName>mikefactorial</UniqueName>
       <LocalizedNames>
-        <LocalizedName description="MikeFactorial" languagecode="1033" />
+        <LocalizedName description="mikefactorial" languagecode="1033" />
       </LocalizedNames>
       <Descriptions>
-        <Description description="MikeFactorial" languagecode="1033" />
+        <Description description="mikefactorial" languagecode="1033" />
       </Descriptions>
       <EMailAddress xsi:nil="true"></EMailAddress>
       <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
