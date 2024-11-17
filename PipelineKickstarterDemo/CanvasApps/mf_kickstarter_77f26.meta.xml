@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>mf_kickstarter_77f26</Name>
+  <AppVersion>2024-11-17T17:22:05Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.24111.11.0</CreatedByClientVersion>
+  <MinClientVersion>3.24111.11.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","showStatusBar":"false","publisherVersion":"3.24111.11","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>Kickstarter</DisplayName>
+  <Description xsi:nil="true"></Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{"7c5c773d-5e26-48be-93e1-3213edd0d8ef":{"id":"/providers/microsoft.powerapps/apis/shared_logicflows","displayName":"Logic flows","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png","dataSources":["PowerAppV2-&gt;Getcurrentweather,RespondtoaPowerApporflow"],"dependencies":["c99ef29b-2bcc-4dd6-a851-8e4aa51dbaca"],"dependents":[],"parameterHints":{"workflowName":{"value":"2ec4b48e-5765-41a8-960b-c4818aceb268"},"workflowEntityId":{"value":"733ad743-08a5-ef11-8a6a-000d3a34a8a6"},"workflowDisplayName":{"value":"PowerAppV2 -&gt; Get current weather,Respond to a Power App or flow"},"c99ef29b-2bcc-4dd6-a851-8e4aa51dbaca":{"value":"shared_msnweather"}},"parameterHintsV2":{"workflowName":{"value":"2ec4b48e-5765-41a8-960b-c4818aceb268"},"workflowEntityId":{"value":"733ad743-08a5-ef11-8a6a-000d3a34a8a6"},"workflowDisplayName":{"value":"PowerAppV2 -&gt; Get current weather,Respond to a Power App or flow"},"shared_msnweather":{"value":"c99ef29b-2bcc-4dd6-a851-8e4aa51dbaca"}},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["Run"]},"c99ef29b-2bcc-4dd6-a851-8e4aa51dbaca":{"id":"/providers/microsoft.powerapps/apis/shared_msnweather","displayName":"MSN Weather","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1717/1.0.1717.3929/msnweather/icon.png","dataSources":[],"dependencies":[],"dependents":["7c5c773d-5e26-48be-93e1-3213edd0d8ef"],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard"}}</ConnectionReferences>
+  <DatabaseReferences>{}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>0</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[{"dependencyid":"733ad743-08a5-ef11-8a6a-000d3a34a8a6","componenttype":29,"componenttypeplatformname":"Workflow"}]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/mf_kickstarter_77f26_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/mf_kickstarter_77f26_DocumentUri.msapp</DocumentUri>
+  <AdditionalUris>
+    <AdditionalUri>/CanvasApps/mf_kickstarter_77f26_AdditionalUris0_identity.json</AdditionalUri>
+  </AdditionalUris>
+</CanvasApp>
